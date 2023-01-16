@@ -1,0 +1,143 @@
+/*navbar */
+
+.navbar-brand:hover {
+  color: white;
+}
+
+
+
+.nav-link:hover {
+  color: yellow;
+}
+
+a.nav-link {
+
+  position: relative;
+}
+
+a.nav-link::before {
+
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  color: yellow;
+  background-color: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+
+}
+
+a.nav-link:hover:before {
+
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/*bkf */
+
+.section-1 {
+  padding: 20vmin 0vmin;
+
+
+}
+
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 100%;
+  height: 900px;
+
+  border-radius: 0.2em;
+}
+
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+
+.section-1 .row .col-md-6 .panel {
+  position: absolute;
+  top: 10vmin;
+  left: -20vmin;
+  background: lightcyan;
+  border-radius: 1px;
+  padding: 5vmin 5vmin 20vmin 10vmin;
+  box-shadow: 5px 50px 50px rgba(0, 0, 0, 0.2);
+  font-family: var(--Rubik);
+  /* z-index: 1; */
+}
+
+.section-1 .row .col-md-6 .panel h1 {
+  font-weight: bold;
+  font-size: 2em;
+
+
+}
+
+.section-1 .row .col-md-6 .panel p {
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.section-1 .row .col-md-6 .panel .title {
+
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 5em;
+  line-height: 50px;
+  padding-bottom: 20px;
+  color: #5543ca;
+  background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.section-1 .row .col-md-6 .panel .row .form-label {
+
+  position: relative;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #5543ca;
+  cursor: text;
+  text-transform: capitalize;
+  transition: transform 0.2s ease-in-out;
+
+}
+
+
+.section-1 .row .col-md-6 .panel .row select {
+  background-color: lightcyan;
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: black;
+
+
+
+
+}
+
+.section-1 .row .col-md-6 .panel .row input {
+  background-color: lightcyan;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: black;
+
+}
+
+.section-1 .row .col-md-6 .panel .row .btn.btn-primary {
+  margin-top: 30px;
+}
+
+.section-1 .row .col-md-6 .panel .row .btn.btn-primary:hover {
+
+  background-color: #111;
+
+}
